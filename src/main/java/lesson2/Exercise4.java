@@ -1,5 +1,7 @@
 package src.main.java.lesson2;
-
+/*
+Даны 2 числа. Вывести большее из них.
+ */
 public class Exercise4 {
     public static void main(String[] args) {
         int number = 3;
