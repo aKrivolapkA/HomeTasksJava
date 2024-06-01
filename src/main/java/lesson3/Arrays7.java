@@ -21,8 +21,6 @@ public class Arrays7 {
             if (array[i]>maxValue) {
                 maxValue = array[i];
                 index=i;
-            }else if (array[i] == maxValue) {
-                System.out.println("одинаковые два числа в массиве. Выведим одно из них" );
             }
         }
         System.out.println("Массив: " + Arrays.toString(array));
