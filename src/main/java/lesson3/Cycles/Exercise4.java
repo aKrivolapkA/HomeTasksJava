@@ -5,7 +5,7 @@ import java.util.Scanner;
 /*
 Составьте программу, вычисляющую A*B, не пользуясь операцией умножения.
  */
-public class Excercise4 {
+public class Exercise4 {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);

@@ -3,7 +3,7 @@ package src.main.java.lesson3.Cycles;
 /*
 Напишите программу, определяющую сумму всех нечетных чисел от 1 до 99
  */
-public class Excercise7 {
+public class Exercise7 {
     public static void main(String[] args) {
 
         int sum = 0;
