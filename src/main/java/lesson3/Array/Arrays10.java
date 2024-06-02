@@ -1,4 +1,4 @@
-package src.main.java.lesson3;
+package src.main.java.lesson3.Array;
 
 import java.util.Arrays;
 import java.util.Random;
