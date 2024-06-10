@@ -19,7 +19,7 @@ public class Arrays6 {
         }
         System.out.println("Массив в строку: "+ Arrays.toString(array));
 
-        if (array[0]<array[1] &&array[1]<array[2]&&array[3]<array[4]){
+        if (array[0]<array[1] &&array[1]<array[2]){
             System.out.println("массив является  строго возрастающей последовательностью.");
         }else {
             System.out.println("массив не является  строго возрастающей последовательностью");
