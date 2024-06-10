@@ -21,12 +21,12 @@ public class Arrays1 {
         System.out.println("--------------------");
 
         int[] array1 = new int[size];
-        for (int i = 0, number = 2; number <= 20; number += 2, i++) {
+        for (int i = 0, number = 2; number <= size; number += 2, i++) {
             array1[i] = number;
         }
 
         for (int i = 0; i < array1.length; i++) {
-            System.out.print(array1[i]);
+            System.out.print(" " + array1[i]);
         }
         System.out.println();
         System.out.println("--------------------");

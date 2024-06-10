@@ -10,7 +10,7 @@ import java.util.Random;
  */
 public class Arrays7 {
     public static void main(String[] args) {
-        int index =0;
+        int index = 0;
 
         int[] array = new int[12];
         int maxValue = array[0];
@@ -18,12 +18,12 @@ public class Arrays7 {
         for (int i = 0; i < array.length; i++) {
             array[i] = random.nextInt(15);
 
-            if (array[i]>maxValue) {
+            if (array[i] > maxValue) {
                 maxValue = array[i];
-                index=i;
+                index = i;
             }
         }
         System.out.println("Массив: " + Arrays.toString(array));
-        System.out.println("Mаксимальное значение: "+ maxValue + ", "+"индекс: " + index);
+        System.out.println("Mаксимальное значение: " + maxValue + ", " + "индекс: " + index);
     }
 }

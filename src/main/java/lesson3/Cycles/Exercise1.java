@@ -9,7 +9,7 @@ package src.main.java.lesson3.Cycles;
 public class Exercise1 {
     public static void main(String[] args) {
         int km = 10;
-        int result = km;
+        double result = km;
 
         for (int day = 2; day <=7 ; day++) {
             km*=1.1;

@@ -21,14 +21,14 @@ public class Arrays5 {
             array1[i] = random.nextInt(15);
             sum1 += array1[i];
         }
-        double  meanArray1 = (double) sum1 / array1.length;
+        double meanArray1 = sum1 / array1.length;
 
         int[] array2 = new int[5];
         for (int i = 0; i < array2.length; i++) {
             array2[i] = random.nextInt(15);
             sum2 += array2[i];
         }
-        double  meanArray2 = sum2 / array2.length;
+        double meanArray2 = sum2 / array2.length;
 
         System.out.println("Первый массив: " + Arrays.toString(array1));
         System.out.println("Второй массив: " + Arrays.toString(array2));

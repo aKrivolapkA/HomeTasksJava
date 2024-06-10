@@ -31,8 +31,8 @@ public class Arrays8 {
                 break;
             }
         }
-        System.out.println("Первый массив: "+Arrays.toString(array1));
-        System.out.println("Второй массив: "+Arrays.toString(array2));
-        System.out.println("Третий массив: "+Arrays.toString(array3));
+        System.out.println("Первый массив: " + Arrays.toString(array1));
+        System.out.println("Второй массив: " + Arrays.toString(array2));
+        System.out.println("Третий массив: " + Arrays.toString(array3));
     }
 }
