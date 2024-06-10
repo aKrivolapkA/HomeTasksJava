@@ -9,10 +9,9 @@ import java.util.Random;
 public class ComputerProject {
     public static void main(String[] args) {
 
-        Computer computer = new Computer("Apple M2", "256 GB", "8 GB", 3);
+        Computer computer = new Computer("Apple M2", "256 GB", "8 GB", 5);
         computer.showDescripton();
         computer.turnOn();
         computer.turnOff();
-
     }
 }
