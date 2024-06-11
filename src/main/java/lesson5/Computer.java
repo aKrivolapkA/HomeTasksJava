@@ -40,10 +40,11 @@ public class Computer {
             }
             if (number == randomNumber) {
                 System.out.println("Ура! Вы угададали, комп включается");
-            } else {
-                System.out.println("о нет, комп сгорает :(  ");
                 count++;
                 System.out.println(count);
+            } else {
+                System.out.println("о нет, комп сгорает :(  ");
+                System.exit(1);
             }
             if (count == resourceOfFullCyclesOfOperation) {
                 System.out.println("Комптютер окончательно сгорел ");
@@ -68,10 +69,12 @@ public class Computer {
             }
             if (number2 == randomNumber2) {
                 System.out.println("Ура! Вы угададали, комп выключается");
-            } else {
-                System.out.println("о нет, комп сгорает.  ");
                 count++;
                 System.out.println(count);
+            } else {
+                System.out.println("о нет, комп сгорает.  ");
+                System.exit(1);
+
             }
             if (count == resourceOfFullCyclesOfOperation) {
                 System.out.println("Компокончательно сгорел ");
