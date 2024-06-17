@@ -1,19 +1,21 @@
 package src.main.java.lesson6.part1;
 
+import java.util.Date;
+
 public class Phone {
-    private int number;
+    private String number;
     private String model;
-    private double weight;
+    private String weight;
 
     //конструктор  который принимает на вход три параметра
-    public Phone(int number, String model, double weight) {
+    public Phone(String number, String model, String weight) {
         this.number = number;
         this.model = model;
         this.weight = weight;
     }
 
     //конструктор  который принимает на вход два параметра
-    public Phone(int number, String model) {
+    public Phone(String number, String model) {
         this.number = number;
         this.model = model;
     }
@@ -22,36 +24,39 @@ public class Phone {
     public Phone() {
     }
 
-//Вызвать из конструктора с тремя параметрами конструктор с двумя?
-    //  ??????
+    //Вызвать из конструктора с тремя параметрами конструктор с двумя TODO  из-за этого конструктора выскакивает ошибка
+    // public Phone(String number, String model, String weight) {
+    //     this(number,model);
+    //     this.weight = weight;
+    // }
 
-
-    public int getNumber() {
+    public String getNumber() {
         return number;
     }
-    //public String getModel() {
-    //    return model;
-    //}
-    //public double getWeight() {
-    //    return weight;
-    //}
+
+    public String getModel() {
+        return model;
+    }
+
+    public String getWeight() {
+        return weight;
+    }
 
     public void printInfo() {
         System.out.println("number " + number + " model " + model + " weight " + weight);
     }
 
     public void receiveCall(String name) {
-        System.out.println("Звонит" + name);
+        System.out.println("Звонит " + name);
     }
-    private  void sendMessage (String...numbers){
+
+    public void receiveCall(String name, String number) {
+        System.out.println("Звонит " + name + "Номер : " + number);
+    }
+
+    private void sendMessage(String... numbers) {
         System.out.println("отправка сообщения");
 
     }
-    /*
-    Вызвать из конструктора с тремя параметрами конструктор с двумя.
-Добавьте перегруженный метод receiveCall, который принимает два
-параметра - имя звонящего и номер телефона звонящего. Вызвать этот
-метод.
 
-     */
 }
