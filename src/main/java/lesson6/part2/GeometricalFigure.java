@@ -16,14 +16,16 @@ public abstract class GeometricalFigure {
     }
 
     public abstract String getFigureType();
-    public abstract double getArea();
-    public abstract double getPerimeter();
-    public  abstract  boolean containsPoint(boolean Point);
 
+    public abstract double getArea();
+
+    public abstract double getPerimeter();
+
+    public abstract boolean containsPoint(Point p);
 
 
     public void printInformation() {
-        System.out.println("информацию о фигуре в общем "//+ getCenter().getX() + "  "  + getCenter().getY() + " радиус круга" + getRa
-        );
+        System.out.println("информацию о фигуре в общем " + getCenter().getX() + "  " + getCenter().getY());
     }
+
 }

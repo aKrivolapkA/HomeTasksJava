@@ -24,6 +24,6 @@ public class Point {
         this.y = y;
     }
     public void printInformation(){
-        System.out.println(" фигурa в общем "+ " x" + x  +" y"+  y  );
+        System.out.println("Point  в общем "+ " x= " + x  +" y = "+  y  );
     }
 }

@@ -24,19 +24,18 @@ public class Circle extends GeometricalFigure{
     @Override
     public double getArea() {
         double area = Math.PI * radius*radius;
-        double area2 = Math.round(area * 100.0) / 100.0;
-        return area2;
+        return Math.round(area * 100.0) / 100.0;
     }
 
     @Override
     public double getPerimeter() {
         double perimeter = 2 * Math.PI *radius;
-        double perimeter2 = Math.round(perimeter * 100.0) / 100.0;
-        return perimeter2;
+        return Math.round(perimeter * 100.0) / 100.0;
     }
 
     @Override
-    public boolean containsPoint(boolean Point) {
+    public boolean containsPoint( Point p) {
+
         return false;
     }
     //containsPointбудет проверять принаддежит ли точка обьекту  подсказка координаты точки по иксу и по игрику если координа точки больше чем центр точки
@@ -44,8 +43,8 @@ public class Circle extends GeometricalFigure{
     @Override
     public void printInformation(){
         System.out.println("КРУГ: \n"+"координаты центра: "+  super.getCenter().getX() + "  "  + getCenter().getY() + " радиус круга " + radius   );
-        System.out.println("КРУГ: \n"+"периметр: "  +getPerimeter());
-        System.out.println("КРУГ: \n"+"площадь: "  +getArea());
+        System.out.println("периметр: "  +getPerimeter());
+        System.out.println("площадь: "  +getArea());
     }
 
 }

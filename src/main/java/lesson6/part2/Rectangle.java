@@ -33,18 +33,16 @@ public class Rectangle extends GeometricalFigure{
 
     @Override
     public double getArea() {
-        double area= width* height;
-        return area;
+        return width* height;
     }
 
     @Override
     public double getPerimeter() {
-        double perimeter = (width + height) *2;
-        return perimeter;
+        return (width + height) *2;
     }
 
     @Override
-    public boolean containsPoint(boolean Point) {
+    public boolean containsPoint( Point p) {
         return false;
     }
 
