@@ -19,8 +19,6 @@ public class SonyLeg implements ILeg{
     @Override
     public int getPrice() {
         Random random= new Random();
-        price=random.nextInt(30);step();
-        System.out.println(price);
-        return price;
+        return random.nextInt(30);
     }
 }

@@ -20,7 +20,6 @@ public class SamsungHand implements IHand{
     @Override
     public int getPrice() {
         Random random= new Random();
-        price=random.nextInt(30);
-        return price;
+        return random.nextInt(30);
     }
 }
