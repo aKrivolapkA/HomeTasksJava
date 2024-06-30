@@ -34,11 +34,18 @@ public class Circle extends GeometricalFigure{
     }
 
     @Override
-    public boolean containsPoint( Point p) {
-
-        return false;
+    public boolean containsPoint( Point point) {
+        double x = Math.pow((point.getX()-getCenter().getX()),2);
+        double y = Math.pow((point.getY()-getCenter().getY()),2);
+        double r =Math.pow(getRadius(),2);
+        if(x+y<=r){
+            System.out.println("содержит точку");
+            return true;
+        }else {
+            System.out.println("не содержит точку");
+            return false;
+        }
     }
-    //containsPointбудет проверять принаддежит ли точка обьекту  подсказка координаты точки по иксу и по игрику если координа точки больше чем центр точки
 
     @Override
     public void printInformation(){

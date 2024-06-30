@@ -42,13 +42,12 @@ public class Square extends GeometricalFigure {
 
 
     @Override
-    public boolean containsPoint(Point p) {
-        if (p.getX() > getCenter().getX() - width / 2 && p.getX() < getCenter().getX() + width / 2 &&
-                p.getY() < getCenter().getY() + height / 2 && p.getY() > getCenter().getY() - height / 2) {
-            System.out.println("Содержит");
+    public boolean containsPoint(Point point) {
+        if ((point.getX()<=getCenter().getX()*2)&&((point.getY()<=getCenter().getY()*2))) {
+            System.out.println("содержит точку");
             return true;
         } else {
-            System.out.println("не содержит");
+            System.out.println("не содержит точку");
             return false;
         }
 

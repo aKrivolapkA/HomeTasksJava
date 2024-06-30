@@ -42,8 +42,14 @@ public class Rectangle extends GeometricalFigure{
     }
 
     @Override
-    public boolean containsPoint( Point p) {
-        return false;
+    public boolean containsPoint( Point point) {
+        if ((point.getX()<=getCenter().getX()*2)&&((point.getY()<=getCenter().getY()*2))) {
+            System.out.println("содержит точку");
+            return true;
+        } else {
+            System.out.println("не содержит точку");
+            return false;
+        }
     }
 
     public void printInformation(){
