@@ -7,7 +7,6 @@ public class SpaceX implements iStart{
     public boolean preLaunchSystemCheck() {
         Random random = new Random();
         int randomNumber = random.nextInt(11);
-        System.out.println("NUMBER SPACE X"+ randomNumber);
         if (randomNumber %2== 0) {
             return true;
         } else {

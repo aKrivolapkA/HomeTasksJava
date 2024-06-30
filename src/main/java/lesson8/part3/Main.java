@@ -7,7 +7,7 @@ public class Main {
 
         Shuttle shuttle = new Shuttle();
         cosmodrom.start(shuttle);
-
+        System.out.println("-------------------");
         SpaceX spaceX = new SpaceX();
         cosmodrom.start(spaceX);
     }

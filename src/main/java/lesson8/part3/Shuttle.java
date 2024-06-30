@@ -7,7 +7,6 @@ public class Shuttle implements iStart {
     public boolean preLaunchSystemCheck() {
         Random random = new Random();
         int randomNumber = random.nextInt(11);
-        System.out.println("NUMBER Shuttlen " + randomNumber);
         if (randomNumber > 3) {
             return true;
         } else {
