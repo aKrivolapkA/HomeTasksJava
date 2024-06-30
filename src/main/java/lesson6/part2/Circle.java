@@ -12,12 +12,8 @@ public class Circle extends GeometricalFigure{
         return radius;
     }
 
-    public void setRadius(double radius) {
-        this.radius = radius;
-    }
-
     @Override
-    public String getFigureType() {
+    public FigureType getFigureType() {
         return null;
     }
 

@@ -19,7 +19,7 @@ public class Square extends GeometricalFigure {
     }
 
     @Override
-    public String getFigureType() {
+    public FigureType getFigureType() {
         return null;
     }
 
@@ -55,7 +55,7 @@ public class Square extends GeometricalFigure {
 
 
     public void printInformation() {
-        System.out.println("КВАДРАТ \n" + "Фигура в общем: " + " Ширина: " + getWidth() + " Высота: " + getWidth());
+        System.out.println("КВАДРАТ \n" + "Фигура в общем: " + " Ширина: " + getWidth() + " Высота: " + getHeight());
         System.out.println("периметр " + getPerimeter());
         System.out.println("площадь: " + getArea());
     }

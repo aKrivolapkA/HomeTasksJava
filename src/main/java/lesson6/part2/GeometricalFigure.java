@@ -1,6 +1,6 @@
 package src.main.java.lesson6.part2;
 
-public abstract class GeometricalFigure {
+public abstract class GeometricalFigure implements Printable {
     private Point center;
 
     public void setCenter(Point center) {
@@ -11,11 +11,11 @@ public abstract class GeometricalFigure {
         this.center = center;
     }
 
-    public Point getCenter() {
+    public final Point getCenter() {
         return center;
     }
 
-    public abstract String getFigureType();
+    public abstract FigureType getFigureType();
 
     public abstract double getArea();
 
@@ -27,5 +27,8 @@ public abstract class GeometricalFigure {
     public void printInformation() {
         System.out.println("информацию о фигуре в общем " + getCenter().getX() + "  " + getCenter().getY());
     }
+
+
+
 
 }

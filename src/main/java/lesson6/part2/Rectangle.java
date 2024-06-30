@@ -8,17 +8,10 @@ public class Rectangle extends GeometricalFigure{
         return width;
     }
 
-    public void setWidth(double width) {
-        this.width = width;
-    }
-
     public double getHeight() {
         return height;
     }
 
-    public void setHeight(double height) {
-        this.height = height;
-    }
 
     public Rectangle(Point center, double width, double height) {
         super(center);
@@ -27,7 +20,7 @@ public class Rectangle extends GeometricalFigure{
     }
 
     @Override
-    public String getFigureType() {
+    public FigureType getFigureType() {
         return null;
     }
 

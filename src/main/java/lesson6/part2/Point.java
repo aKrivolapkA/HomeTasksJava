@@ -1,8 +1,8 @@
 package src.main.java.lesson6.part2;
 
-public class Point {
-    private double x;
-    private double y;
+public  final class Point {
+    private  final double x;
+    private  final double y;
 
     public Point(double x, double y) {
         this.x = x;
@@ -17,12 +17,6 @@ public class Point {
         return y;
     }
 
-    public void setX(double x) {
-        this.x = x;
-    }
-    public void setY(double y) {
-        this.y = y;
-    }
     public void printInformation(){
         System.out.println("Point  в общем "+ " x= " + x  +" y = "+  y  );
     }
