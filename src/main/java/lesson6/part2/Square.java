@@ -20,7 +20,7 @@ public class Square extends GeometricalFigure {
 
     @Override
     public FigureType getFigureType() {
-        return null;
+        return FigureType.SQUARE;
     }
 
     @Override

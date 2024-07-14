@@ -27,8 +27,4 @@ public abstract class GeometricalFigure implements Printable {
     public void printInformation() {
         System.out.println("информацию о фигуре в общем " + getCenter().getX() + "  " + getCenter().getY());
     }
-
-
-
-
 }

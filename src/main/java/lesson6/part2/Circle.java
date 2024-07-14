@@ -14,7 +14,7 @@ public class Circle extends GeometricalFigure{
 
     @Override
     public FigureType getFigureType() {
-        return null;
+        return FigureType.CIRCLE;
     }
 
     @Override

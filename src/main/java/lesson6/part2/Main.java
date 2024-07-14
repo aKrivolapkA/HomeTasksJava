@@ -1,8 +1,8 @@
 package src.main.java.lesson6.part2;
 
-import java.util.Arrays;
+import java.util.ArrayList;
+import java.util.List;
 
-import static src.main.java.lesson6.part2.FigureType.CIRCLE;
 
 public class Main {
     public static void main(String[] args) {
@@ -33,18 +33,7 @@ public class Main {
         Square square1 = new Square(point, 5, 5);
         getNotRoundFigureTypes();
 
-
-
     }
-    //      GeometricalFigure[] figures = new GeometricalFigure[]{
-    //              new Circle(point, 2),
-    //              new Rectangle(point, 3, 1),
-    //              new Square(point, 3, 1)
-    //      };
-    //      boolean result = containsCircle(figures);
-    //      System.out.println("содержит ли круг: " + result);
-    //  }
-
 
     public static boolean containsCircle(GeometricalFigure... figures) {
         for (GeometricalFigure figure : figures) {
@@ -56,14 +45,14 @@ public class Main {
 
     }
 
-    public static void getNotRoundFigureTypes() {
-        for (FigureType figureType : FigureType.values()) {
-            if (figureType.isRound()) {
-                System.out.println(figureType + "tut");
-            } else {
-                System.out.println(figureType + "niea tut");
+    public static FigureType[] getNotRoundFigureTypes() {
+        List<FigureType> notRoundTypes = new ArrayList<>();
+        for (FigureType type : FigureType.values()) {
+            if (!type.isRound()) {
+                notRoundTypes.add(type);
             }
         }
-
+        return notRoundTypes.toArray(new FigureType[0]);
     }
+
 }

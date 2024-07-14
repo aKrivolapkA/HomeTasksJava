@@ -21,7 +21,7 @@ public class Rectangle extends GeometricalFigure{
 
     @Override
     public FigureType getFigureType() {
-        return null;
+        return FigureType.RECTANGLE;
     }
 
     @Override
