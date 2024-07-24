@@ -15,28 +15,4 @@ public enum FigureType {
     public boolean isRound() {
         return round;
     }
-
-
-  //   for (FigureType type : values()) {
-  //       if (type.getFigura().equals(CIRCLE)) {
-  //           System.out.println("тут");
-  //           return true;
-  //       }
-  //   }
-  //   System.out.println("тут два раза ");
-  //   return false;
-
-
-
-    // public boolean isRound() {
-    //     for(FigureType type :values()){
-    //         if(type.getFigura().equals(CIRCLE)){
-    //             System.out.println("тут");
-    //             return true;
-    //         }
-    //     }
-    //     System.out.println("тут два раза ");
-    //     return false;
-    // }
-
 }
