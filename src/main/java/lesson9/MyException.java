@@ -15,8 +15,8 @@ public class MyException extends Exception {
     public static void println(String s) throws MyException {
         try {
             throw new MyException(s);
-        } finally {
-            System.out.println();
+        } catch (Exception ex){
+            System.out.println(ex.getMessage());
         }
     }
 
