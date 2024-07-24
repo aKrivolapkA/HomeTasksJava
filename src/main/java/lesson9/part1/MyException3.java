@@ -1,4 +1,4 @@
-package src.main.java.lesson9;
+package src.main.java.lesson9.part1;
 
 public class MyException3 extends  MyException2 {
     public MyException3(){

@@ -1,7 +1,7 @@
-package src.main.java.lesson9;
+package src.main.java.lesson9.part1;
 
-import static src.main.java.lesson9.MyException.f;
-import static src.main.java.lesson9.MyException.f1;
+import static src.main.java.lesson9.part1.MyException.f;
+import static src.main.java.lesson9.part1.MyException.f1;
 
 public class Main4 {
     public static void main(String[] args) throws MyException{

@@ -1,4 +1,4 @@
-package src.main.java.lesson9;
+package src.main.java.lesson9.part1;
 
 public class MyException2 extends Throwable {
     public MyException2(){

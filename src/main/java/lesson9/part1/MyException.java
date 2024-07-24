@@ -1,7 +1,4 @@
-package src.main.java.lesson9;
-
-import java.sql.Array;
-import java.util.Arrays;
+package src.main.java.lesson9.part1;
 
 public class MyException extends Exception {
     public MyException(String message) {
