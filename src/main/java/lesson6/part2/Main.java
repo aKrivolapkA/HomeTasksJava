@@ -16,13 +16,13 @@ public class Main {
         rectangle.printInformation();
         rectangle.containsPoint(point);
         System.out.println("---------------");
-        Square square = new Square(point, 5, 5);
+        Square square = new Square(point, 5);
         square.printInformation();
         square.containsPoint(point);
         System.out.println("---------------");
 
 
-        System.out.println("содержит ли круг: " + containsCircle(new Square(point, 2, 3)));
+        System.out.println("содержит ли круг: " + containsCircle(new Square(point,  3)));
         System.out.println("содержит ли круг: " + containsCircle(new Rectangle(point, 3, 4)));
         System.out.println("содержит ли круг: " + containsCircle(new Circle(point, 2)));
 
@@ -30,7 +30,7 @@ public class Main {
         Printable printable = new Circle(new Point(3, 2), 2);
         printable.printInformation();
         System.out.println("---------------");
-        Square square1 = new Square(point, 5, 5);
+        Square square1 = new Square(point,  5);
         getNotRoundFigureTypes();
 
     }
