@@ -7,12 +7,6 @@ public class Phone {
     private String model;
     private String weight;
 
-    //конструктор  который принимает на вход три параметра
-    public Phone(String number, String model, String weight) {
-        this.number = number;
-        this.model = model;
-        this.weight = weight;
-    }
 
     //конструктор  который принимает на вход два параметра
     public Phone(String number, String model) {
@@ -25,10 +19,10 @@ public class Phone {
     }
 
     //Вызвать из конструктора с тремя параметрами конструктор с двумя TODO  из-за этого конструктора выскакивает ошибка
-    // public Phone(String number, String model, String weight) {
-    //     this(number,model);
-    //     this.weight = weight;
-    // }
+     public Phone(String number, String model, String weight) {
+         this(number,model);
+         this.weight = weight;
+     }
 
     public String getNumber() {
         return number;
