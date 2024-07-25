@@ -19,17 +19,11 @@ public class Square extends GeometricalFigure {
 
     @Override
     public double getArea() {
-        if (width != width) {
-            System.out.println("вы ввели значения прямоугольника, а не квадрата");
-        }
         return width * width;
     }
 
     @Override
     public double getPerimeter() {
-        if (width != width) {
-            System.out.println("вы ввели значения прямоугольника, а не квадрата");
-        }
         return (width + width) * 2;
 
     }
